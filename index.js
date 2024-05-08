@@ -1,14 +1,10 @@
 const express = require('express');
+const cors = require('cors'); // Import the CORS module
 const app = express();
 const port = 3000;
 
-
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    next();
-});
+// Enable CORS for all routes
+app.use(cors());
 
 // Define combined endpoint
 app.get('/portfolio', (req, res) => {
@@ -17,7 +13,8 @@ app.get('/portfolio', (req, res) => {
             Name: "Jystine Angel Manatad",
             Birthday: "1998-12-25",
             Gender: "F",
-            ContactNo: "ngeeeeeeeeee    ",
+            ContactNo: "ngeeeeeeeeee",
+            Email: "example@example.com", // Add Email field
             Address: "hakdog",
         },
         skills: [
@@ -40,9 +37,7 @@ app.get('/portfolio', (req, res) => {
     };
     res.json(portfolioData);
 });
-app.get('/', (req, res) => {
-    res.redirect('/portfolio');
-});
+
 // Start the server
 app.listen(port, () => {
     console.log(`Web service listening at http://localhost:${port}`);
