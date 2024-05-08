@@ -10,7 +10,7 @@ app.get('/portfolio', (req, res) => {
             Birthday: "1998-12-25",
             Gender: "F",
             ContactNo: "09324299630",
-            Address: "Juana Osmena Ext. Cebu City",
+            Address: "hakdog",
         },
         skills: [
             { description: "UI/UX Designer", level: "Intermediate"},
@@ -26,7 +26,7 @@ app.get('/portfolio', (req, res) => {
             { school: "University of Southern Philippines Foundation Lahug", year: "Year" }
         ],
         personalReferences: [
-            { name: "Harry Styles", relationship: "Supervisor at DesignLab Solutions", contactNo: "0923-456-7890" },
+            { name: "bleeeee", relationship: "Supervisor at DesignLab Solutions", contactNo: "0923-456-7890" },
             { name: "Kim Hanbin", relationship: "Senior UI Designer at PixelPerfect Designs", contactNo: "0955-123-4567" }
         ]
     };
