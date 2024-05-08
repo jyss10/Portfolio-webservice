@@ -1,10 +1,6 @@
 const express = require('express');
-const cors = require('cors'); // Import the CORS module
 const app = express();
 const port = 3000;
-
-// Enable CORS for all routes
-app.use(cors());
 
 // Define combined endpoint
 app.get('/portfolio', (req, res) => {
@@ -13,9 +9,8 @@ app.get('/portfolio', (req, res) => {
             Name: "Jystine Angel Manatad",
             Birthday: "1998-12-25",
             Gender: "F",
-            ContactNo: "ngeeeeeeeeee",
-            Email: "example@example.com", // Add Email field
-            Address: "hakdog",
+            ContactNo: "09324299630",
+            Address: "Juana Osmena Ext. Cebu City",
         },
         skills: [
             { description: "UI/UX Designer", level: "Intermediate"},
@@ -31,13 +26,15 @@ app.get('/portfolio', (req, res) => {
             { school: "University of Southern Philippines Foundation Lahug", year: "Year" }
         ],
         personalReferences: [
-            { name: "bleeeee", relationship: "Supervisor at DesignLab Solutions", contactNo: "0923-456-7890" },
+            { name: "Harry Styles", relationship: "Supervisor at DesignLab Solutions", contactNo: "0923-456-7890" },
             { name: "Kim Hanbin", relationship: "Senior UI Designer at PixelPerfect Designs", contactNo: "0955-123-4567" }
         ]
     };
     res.json(portfolioData);
 });
-
+app.get('/', (req, res) => {
+    res.redirect('/portfolio');
+});
 // Start the server
 app.listen(port, () => {
     console.log(`Web service listening at http://localhost:${port}`);
