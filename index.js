@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+const cors = require('cors');
+
+app.use(cors());
 
 // Define combined endpoint
 app.get('/portfolio', (req, res) => {
@@ -32,9 +35,11 @@ app.get('/portfolio', (req, res) => {
     };
     res.json(portfolioData);
 });
+
 app.get('/', (req, res) => {
     res.redirect('/portfolio');
 });
+
 // Start the server
 app.listen(port, () => {
     console.log(`Web service listening at http://localhost:3000`);
