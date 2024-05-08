@@ -2,6 +2,14 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+
+app.use((req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+    next();
+});
+
 // Define combined endpoint
 app.get('/portfolio', (req, res) => {
     const portfolioData = {
@@ -9,7 +17,7 @@ app.get('/portfolio', (req, res) => {
             Name: "Jystine Angel Manatad",
             Birthday: "1998-12-25",
             Gender: "F",
-            ContactNo: "ngeeeeeeeeee",
+            ContactNo: "ngeeeeeeeeee    ",
             Address: "hakdog",
         },
         skills: [
