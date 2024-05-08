@@ -13,7 +13,7 @@ app.get('/portfolio', (req, res) => {
             Birthday: "1998-12-25",
             Gender: "F",
             ContactNo: "09324299630",
-            Address: "Juana Osmena Ext. Cebu City",
+            Address: "secret imo pa lng ko kidnapon",
         },
         skills: [
             { description: "UI/UX Designer", level: "Intermediate"},
@@ -24,12 +24,12 @@ app.get('/portfolio', (req, res) => {
             { company: "PixelPerfect Designs", designation: "Junior UI Designer", details: "Assisted in the design and development of user interfaces for web and mobile applications. Worked closely with senior designers to translate concepts into visually appealing designs. Participated in brainstorming sessions and design critiques to improve design quality.", year: "2021-2023" }
         ],
         education: [
-            { school: "University of Southern Philippines Foundation Lahug", year: "Year" },
+            { school: "University of Southern Philippines Foundation Lahug", year: "kalimot ko" },
             { school: "University of Southern Philippines Foundation Lahug", year: "2019-2021" },
             { school: "University of Southern Philippines Foundation Lahug", year: "Year" }
         ],
         personalReferences: [
-            { name: "Harry Styles", relationship: "Supervisor at DesignLab Solutions", contactNo: "0923-456-7890" },
+            { name: "nice ka sir", relationship: "Supervisor at DesignLab Solutions", contactNo: "0923-456-7890" },
             { name: "Kim Hanbin", relationship: "Senior UI Designer at PixelPerfect Designs", contactNo: "0955-123-4567" }
         ]
     };
