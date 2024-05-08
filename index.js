@@ -37,5 +37,5 @@ app.get('/', (req, res) => {
 });
 // Start the server
 app.listen(port, () => {
-    console.log(`Web service listening at http://localhost:${port}`);
+    console.log(`Web service listening at http://localhost:3000`);
 });
