@@ -9,7 +9,7 @@ app.get('/portfolio', (req, res) => {
             Name: "Jystine Angel Manatad",
             Birthday: "1998-12-25",
             Gender: "F",
-            ContactNo: "09324299630",
+            ContactNo: "ngeeeeeeeeee",
             Address: "hakdog",
         },
         skills: [
