@@ -12,7 +12,7 @@ app.get('/portfolio', (req, res) => {
             Name: "Jystine Angel Manatad",
             Birthday: "1998-12-25",
             Gender: "F",
-            ContactNo: "09324299630",
+            ContactNo: "ngeeeeeeeeeeee",
             Address: "secret imo pa lng ko kidnapon",
         },
         skills: [
@@ -30,7 +30,7 @@ app.get('/portfolio', (req, res) => {
             { school: "IGLC Montessori School Inc", year: "20XX-20XX" }
         ],
         personalReferences: [
-            { name: "nice ka sir", relationship: "Supervisor at DesignLab Solutions", contactNo: "0923-456-7890" },
+            { name: "alice", relationship: "Supervisor at DesignLab Solutions", contactNo: "0923-456-7890" },
             { name: "Kim Hanbin", relationship: "Senior UI Designer at PixelPerfect Designs", contactNo: "0955-123-4567" }
         ]
     };
